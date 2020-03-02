@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/dnv-react-component/static/css/main.795991f2.chunk.css",
+    "main.js": "/dnv-react-component/static/js/main.d6c5c628.chunk.js",
+    "main.js.map": "/dnv-react-component/static/js/main.d6c5c628.chunk.js.map",
+    "runtime-main.js": "/dnv-react-component/static/js/runtime-main.3f7691e7.js",
+    "runtime-main.js.map": "/dnv-react-component/static/js/runtime-main.3f7691e7.js.map",
+    "static/js/2.4136e49d.chunk.js": "/dnv-react-component/static/js/2.4136e49d.chunk.js",
+    "static/js/2.4136e49d.chunk.js.map": "/dnv-react-component/static/js/2.4136e49d.chunk.js.map",
+    "index.html": "/dnv-react-component/index.html",
+    "precache-manifest.23f1e247f1ee4afe28a63c46e16dab01.js": "/dnv-react-component/precache-manifest.23f1e247f1ee4afe28a63c46e16dab01.js",
+    "service-worker.js": "/dnv-react-component/service-worker.js",
+    "static/css/main.795991f2.chunk.css.map": "/dnv-react-component/static/css/main.795991f2.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f7691e7.js",
+    "static/js/2.4136e49d.chunk.js",
+    "static/css/main.795991f2.chunk.css",
+    "static/js/main.d6c5c628.chunk.js"
+  ]
+}
