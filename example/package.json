@@ -1,6 +1,7 @@
 {
   "name": "example",
   "version": "0.1.0",
+  "homepage": "https://danielnava901.github.io/dnv-react-component",
   "private": true,
   "dependencies": {
     "react": "^16.12.0",
