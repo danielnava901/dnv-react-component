@@ -48,5 +48,10 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "@types/yup": "^0.26.32",
+    "formik": "^2.1.4",
+    "yup": "^0.28.1"
+  }
 }

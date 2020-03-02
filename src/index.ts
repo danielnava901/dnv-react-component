@@ -1,5 +1,7 @@
-import { TestComponent } from './components/TestComponent/TestComponent';
 import CardDNV from './components/CardDNV';
+import FormLoginDNV from './components/FormLoginDNV';
 
-
-export { TestComponent, CardDNV };
+export { 
+  CardDNV,
+  FormLoginDNV
+};
