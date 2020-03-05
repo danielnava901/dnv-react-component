@@ -5,9 +5,9 @@ interface CardDNVInterface {
     text?: string
 };
 
-const CardDNV : React.FC<CardDNVInterface> = (props) => {
+const Card : React.FC<CardDNVInterface> = (props) => {
   return <div>CARD DNV {props.text ? props.text : 'NADA'}</div>
 };
 
 
-export default CardDNV;
+export default Card;

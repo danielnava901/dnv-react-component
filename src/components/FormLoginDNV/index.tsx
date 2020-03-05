@@ -20,7 +20,7 @@ interface FormLoginDNV {
   onClickRecovery?: () => void
 };
 
-const FormLoginDNV : React.FC<FormLoginDNV> = (props) => {
+const FormLogin : React.FC<FormLoginDNV> = (props) => {
 
   const formik: any = useFormik({
     initialValues: {
@@ -71,4 +71,4 @@ const FormLoginDNV : React.FC<FormLoginDNV> = (props) => {
 };
 
 
-export default FormLoginDNV;
+export default FormLogin;
