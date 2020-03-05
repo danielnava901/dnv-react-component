@@ -30,12 +30,15 @@ export const Main = styled.div`
     padding: 10px;
     flex-grow: 2;
     width: 100%;
+    max-height: 100vh
+    overflow: auto;
 `;
 
 export const Page = styled.div`
     display: flex;
     min-width: 100%;
     min-height: 100%;
+    background-color: rgb(241, 242, 255);
 `;
 
 
@@ -164,8 +167,48 @@ export const MenuContainer = styled.div`
         color: #4caf50;
         font-weight: 400;
       }
+
       a:hover {
         transition: opacity .1s ease-out
       }
   }
+`;
+
+
+export const TableHistoryContainer = styled.table`
+
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  background-color: white;
+  width: 100%;
+
+  .column-invisible {
+    display: none;
+  }
+
+  th {
+      border-bottom: 1px solid #364043;
+      color: #E2B842;
+      font-size: 1.1em;
+      font-weight: 600;
+      padding: 0.6em 1.2em;
+      text-align: left;
+  }
+  td {
+      font-weight: 400;
+      padding: 0.7em 1.2em;
+  }
+  .disabled td {
+      color: #4F5F64;
+  }
+  tbody tr {
+      transition: background 0.2s ease;
+      border-bottom: 1px solid gray;
+  }
+  tbody tr:hover {
+      background: rgba(11,43,57, 0.85);
+      cursor: pointer;
+      color: #ffffff;
+  }
+
 `;

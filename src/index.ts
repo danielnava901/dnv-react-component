@@ -6,6 +6,7 @@ import StepProgress from './components/StepProgress';
 import Modal from './components/Modal';
 import LeftSide from './components/LeftSide';
 import Menu from './components/Menu';
+import TableHistory from './components/TableHistory';
 
 export { 
   Card,
@@ -17,6 +18,7 @@ export {
   Modal,
   LeftSideContainer,
   LeftSide,
-  Menu
+  Menu,
+  TableHistory
 };
 
