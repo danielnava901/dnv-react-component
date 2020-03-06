@@ -1,5 +1,6 @@
 import React from 'react';
 import { MenuContainer } from '../StyledComponents';
+import { Link } from "react-router-dom";
 
 interface MenuItemsInterface {
   id: number,
@@ -16,7 +17,7 @@ const Menu: React.FC<MenuPropsInterface> = ({items}) => {
     return <MenuContainer>
         {
             items.filter((item) => !!Number(item.available)).map((item, index) => {
-                return <div className="item" key={index}><a href="#">{item.caption}</a></div>
+              return <div className="item" key={index}><Link to={item.path}>{item.caption}</Link></div>
             })
         }
     </MenuContainer>

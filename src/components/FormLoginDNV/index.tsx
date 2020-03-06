@@ -1,7 +1,7 @@
 import React from 'react';
-import { useFormik } from "formik";
-import { SpanError } from '../StyledComponents';
 
+import { SpanError } from '../StyledComponents';
+import { useFormik } from "formik";
 import * as Yup from 'yup';
 import Card from '../CardDNV';
 
@@ -23,13 +23,14 @@ interface FormLoginDNV {
 
 const FormLogin : React.FC<FormLoginDNV> = (props) => {
 
+  
   const formik: any = useFormik({
     initialValues: {
         email: props.email,
         password: props.password,
     },
     validationSchema: formSchema,
-    onSubmit: props.onSend,
+    onSubmit: props.onSend
 });
 
 
@@ -60,6 +61,7 @@ const FormLogin : React.FC<FormLoginDNV> = (props) => {
             <div className="form-group">
                 <div className="col-sm-12 text-right">
                     <a className="stretched-link" style={{cursor: "pointer"}} onClick={props.onClickRecovery}>Recuperar contraseña</a>
+                    
                 </div>
             </div>
           </div>
