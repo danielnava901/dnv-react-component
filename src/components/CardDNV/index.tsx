@@ -2,11 +2,17 @@ import React from 'react';
 
 
 interface CardDNVInterface {
-    text?: string
+    heading?: string
 };
 
 const Card : React.FC<CardDNVInterface> = (props) => {
-  return <div>CARD DNV {props.text ? props.text : 'NADA'}</div>
+  return <div className="panel panel-default">
+    <div className="panel-heading">{props.heading || 'Entrar' }</div>
+    <div className="panel-body">
+      {props.children}
+    </div>
+  </div>
+
 };
 
 

@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import { SpanError } from '../StyledComponents';
 
 import * as Yup from 'yup';
+import Card from '../CardDNV';
 
 
 const formSchema = Yup.object().shape({
@@ -32,10 +33,8 @@ const FormLogin : React.FC<FormLoginDNV> = (props) => {
 });
 
 
-  return <div className="panel panel-default">
-    <div className="panel-heading">{props.heading || 'Entrar' }</div>
-    <div className="panel-body">
-      <form action="#" onSubmit={formik.handleSubmit}>
+  return <Card heading={props.heading}> 
+    <form action="#" onSubmit={formik.handleSubmit}>
         <div className="row">
           <div className="col-sm-12">
             <div className="form-group">
@@ -66,8 +65,7 @@ const FormLogin : React.FC<FormLoginDNV> = (props) => {
           </div>
         </div>
       </form>
-    </div>
-  </div>
+  </Card>
 };
 
 

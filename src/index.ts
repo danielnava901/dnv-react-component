@@ -7,6 +7,9 @@ import Modal from './components/Modal';
 import LeftSide from './components/LeftSide';
 import Menu from './components/Menu';
 import TableHistory from './components/TableHistory';
+import PreLoadPage from './components/PreLoadPage';
+
+import * as Utilities from './utilities';
 
 export { 
   Card,
@@ -19,6 +22,8 @@ export {
   LeftSideContainer,
   LeftSide,
   Menu,
-  TableHistory
+  TableHistory,
+  Utilities,
+  PreLoadPage
 };
 
