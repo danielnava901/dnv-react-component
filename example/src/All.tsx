@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 
 import {
-  FormLogin, 
-  Page, 
+  //FormLogin, 
   StepProgress, 
   Main, 
   Modal,
-  LeftSide,
-  Menu,
+  //FormRegister,
   FormRecovery,
-  TableHistory
+  TableHistory,
+  FormResetPassword
 } from './reactComponentLib';
 interface AllInterface {
 };
@@ -20,6 +19,7 @@ class All extends Component<AllInterface, any> {
     this.state = {
       email: "",
       password: "",
+      username: "",
       step: 1,
       showModal: false,
       showModalRecovery: false
@@ -73,6 +73,7 @@ class All extends Component<AllInterface, any> {
       <Main>
             <StepProgress steps={step} current_step={this.state.step} last_step={3} onClickStep={this.onClickStep} finish={true}/>
             <div className="row">
+              {/*
               <div className="col-sm-12">
                 <FormLogin 
                   heading="Iniciar sesión"
@@ -83,6 +84,30 @@ class All extends Component<AllInterface, any> {
                   onClickRecovery={() => {this.onModal(true)}}
                   />
               </div>
+              
+              <div className="col-sm-12">
+                <FormRegister 
+                  heading="Registro"
+                  onSend={this.onSendForm}
+                  onChange={this.onChangeEmail} 
+                  email={this.state.email} 
+                  password={this.state.password}
+                  confirmPassword=""
+                  username={this.state.username}
+                />
+              </div>
+              */}
+
+              <div className="col-sm-12">
+                <FormResetPassword 
+                  heading="Registro"
+                  onSend={this.onSendForm}
+                  onChange={this.onChangeEmail} 
+                  email={this.state.email} 
+                  password={this.state.password}
+                  confirmPassword=""
+                />
+              </div>
             </div>
 
             {
@@ -91,7 +116,10 @@ class All extends Component<AllInterface, any> {
               </Modal>: null
             }
             {
-              this.state.showModalRecovery ? <FormRecovery email={this.state.email} onSend={() => {console.log("Recovery")}} onClose={() => {this.onModal(false)}}/> : null
+              this.state.showModalRecovery ? <FormRecovery 
+                email={this.state.email} 
+                onSend={() => {console.log("Recovery")}} 
+                onClose={() => {this.onModal(false)}}/> : null
             }
 
             <TableHistory 

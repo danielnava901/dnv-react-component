@@ -212,3 +212,49 @@ export const TableHistoryContainer = styled.table`
   }
 
 `;
+
+export const HeaderContainer = styled.header`
+  width: 100%;
+  height: 55px;
+  background-color: black;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .logo {
+    flex-grow: 1;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 2;
+
+    .item {
+      color: white;
+      margin: 0 0 0 10px;
+    }
+
+    .item:hover {
+      text-decoration: underline;
+      transition: opacity .1s ease-out;
+      cursor: pointer;
+    }
+  }
+`;
+
+export const NotFoundContainer = styled.div`
+
+  color: rgba(23, 23, 23, 0.8);
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .text {
+    font-size: 1.3rem;
+  }
+`;

@@ -4,16 +4,14 @@ import {
   Page,
   LeftSide,
   Menu,
-  Main
+  Main,
+  NotFound
 } from './reactComponentLib';
 import All from './All';
+import Public from './Public';
 
 
 class App extends Component<any, any> {
-
-  constructor(props: any) {
-    super(props);
-  }
 
   render() {
     let items = [
@@ -28,6 +26,12 @@ class App extends Component<any, any> {
         caption: "Hello",
         available: true,
         path: "/hello"
+      },
+      {
+        id: 3,
+        caption: "Public",
+        available: true,
+        path: "/public"
       }
     ];
 
@@ -40,14 +44,22 @@ class App extends Component<any, any> {
           </LeftSide>
           <Switch>
               <Route
+                  path="/"
+                  exact={true}
+                  children={<All />}
+              />
+              <Route
                   path="/hello"
                   exact={true}
                   children={<Main><div>Hello</div></Main>  }
               />
               <Route
-                  path="/"
+                  path="/public"
                   exact={true}
-                  children={<All />}
+                  children={<Public/>}
+              />
+              
+              <Route children={<NotFound />}
               />
           </Switch>
         </Page>

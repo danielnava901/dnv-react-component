@@ -16,7 +16,7 @@ interface FormRecoveryInterface {
 };
 
 const FormRecovery : React.FC<FormRecoveryInterface> = (props) => {
-  console.log(props);
+  
   const formik: any = useFormik({
     initialValues: {
         email: props.email,
@@ -27,7 +27,7 @@ const FormRecovery : React.FC<FormRecoveryInterface> = (props) => {
 
   return (
     <Modal title="Recuperar contraseña" onClose={(typeof props.onClose === "function") ? props.onClose : () => {}}>
-    <form action="#" onSubmit={formik.handleSubmit}>
+      <form action="#" onSubmit={formik.handleSubmit}>
         <div className="row">
           <div className="col-sm-12">
             <div className="form-group">
