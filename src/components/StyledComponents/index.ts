@@ -34,7 +34,7 @@ export const Main = styled.div`
     overflow: auto;
 `;
 
-export const Page = styled.div`
+export const PageContainer = styled.div<any>`
     display: flex;
     min-width: 100%;
     min-height: 100%;

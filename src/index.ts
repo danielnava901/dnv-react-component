@@ -4,7 +4,7 @@ import FormRecovery from './components/FormRecoveryPassword';
 import FormRegister from './components/FormRegister';
 import FormResetPassword from './components/FormResetPassword';
 import Loader from './components/Loader';
-import { Main, Page, LeftSideContainer } from './components/StyledComponents';
+import { Main, PageContainer, LeftSideContainer } from './components/StyledComponents';
 import StepProgress from './components/StepProgress';
 import Modal from './components/Modal';
 import LeftSide from './components/LeftSide';
@@ -13,6 +13,7 @@ import TableHistory from './components/TableHistory';
 import PreLoadPage from './components/PreLoadPage';
 import Header from './components/Header';
 import NotFound from './components/NotFound';
+import Page from './components/Page';
 
 import * as Utilities from './utilities';
 
@@ -25,6 +26,7 @@ export {
   Loader,
   Main,
   Page,
+  PageContainer,
   StepProgress,
   Modal,
   LeftSideContainer,
