@@ -11,7 +11,7 @@ const formSchema = Yup.object().shape({
 
 interface FormRecoveryInterface {
   email?: string,
-  onSend: () => void,
+  onSend: (va: any) => void,
   onClose?: () => void 
 };
 

@@ -231,8 +231,14 @@ export const HeaderContainer = styled.header<any>`
     align-items: center;
     justify-content: flex-start;
     flex-grow: 1;
-    width: 250px;
+    width: 200px;
     height: 50px;
+    padding: 10px;
+
+      img {
+        width: 100%;
+
+      }
   }
 
   .menu {
