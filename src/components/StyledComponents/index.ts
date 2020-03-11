@@ -234,10 +234,11 @@ export const HeaderContainer = styled.header<any>`
     width: 200px;
     height: 50px;
     padding: 10px;
+    color: ${(props: any) => props.color || 'red'};
+    cursor: pointer;
 
       img {
         width: 100%;
-
       }
   }
 

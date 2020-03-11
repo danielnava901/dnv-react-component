@@ -8,8 +8,8 @@ import Card from '../CardDNV';
 
 const formSchema = Yup.object().shape({
   email: Yup.string(),
+  username: Yup.string(),
   password: Yup.string().min(8, "Mínimo 8 caractéres").required('Este campo es obligatorio'),
-  username: Yup.string().required("Este campo es obligatorio"),
   confirmPassword: Yup.string().min(8, "Mínimo 8 caractéres")
         .oneOf([Yup.ref('password'), null], 'La confirmación no coincide')
         .required('Este campo es obligatorio')

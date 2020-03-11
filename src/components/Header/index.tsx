@@ -18,7 +18,7 @@ const Header : React.FC<HeaderInterface> = (props) => {
   return <HeaderContainer bgColor={props.bgColor || 'black' } color={props.color || "white" } padding={props.padding || '30px'}>
     <div className="logo">
       {
-        isImg ? <img src={props.logo} alt="logo"/> : <div>{props.logo}</div>
+        isImg ? <Link to="/"><img src={props.logo} alt="logo"/></Link> : <Link to="/"><div>{props.logo}</div></Link>
       }
     </div>
     <div className="menu">
