@@ -218,13 +218,21 @@ export const HeaderContainer = styled.header<any>`
   height: 55px;
   color: ${(props: any) => props.color || 'red'};
   background-color: ${(props: any) => props.bgColor || 'yellow'};
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: ${(props: any) => props.padding || '10px'};
+  padding-right: ${(props: any) => props.padding || '10px'};
   display: flex;
   align-items: center;
   justify-content: space-around;
 
   .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-grow: 1;
+    width: 250px;
+    height: 50px;
   }
 
   .menu {

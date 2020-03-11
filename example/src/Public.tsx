@@ -15,7 +15,7 @@ const Public : React.FC<any> = (props) => {
   let menuItems = [{id: 1, caption: "Nosotros", path: "/public/us"}, {id: 2, caption: "Entrar", path: "/public/login"}];
   return (
     <div style={{width: "100%"}}>
-      <Header logo="DNV" items={menuItems}  />
+      <Header logo="DNV" items={menuItems}  padding="50px"/>
       
       <Switch>
         <Route 

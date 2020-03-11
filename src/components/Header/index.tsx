@@ -7,14 +7,19 @@ import {
 interface HeaderInterface {
   items: Array<any> ,
   logo?: string,
-  bgColor?: string,
-  color?: string
+  bgColor?: string | undefined,
+  color?: string | undefined,
+  padding?: string | undefined 
 };
 
 const Header : React.FC<HeaderInterface> = (props) => {
-  return <HeaderContainer bgColor={props.bgColor || 'black' } color={props.color || "white" }>
+  let isImg: boolean = props.logo ? props.logo.indexOf('.png') >= 0 : false;
+
+  return <HeaderContainer bgColor={props.bgColor || 'black' } color={props.color || "white" } padding={props.padding || '30px'}>
     <div className="logo">
-      <div>{props.logo}</div>
+      {
+        isImg ? <img src={props.logo} alt="logo"/> : <div>{props.logo}</div>
+      }
     </div>
     <div className="menu">
       {
