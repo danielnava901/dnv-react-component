@@ -6,11 +6,13 @@ import {
 
 interface HeaderInterface {
   items: Array<any> ,
-  logo?: string
+  logo?: string,
+  bgColor?: string,
+  color?: string
 };
 
 const Header : React.FC<HeaderInterface> = (props) => {
-  return <HeaderContainer bgColor="black" color="white">
+  return <HeaderContainer bgColor={props.bgColor || 'black' } color={props.color || "white" }>
     <div className="logo">
       <div>{props.logo}</div>
     </div>
