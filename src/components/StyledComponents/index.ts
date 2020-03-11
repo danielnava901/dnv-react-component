@@ -216,7 +216,14 @@ export const TableHistoryContainer = styled.table`
 export const HeaderContainer = styled.header`
   width: 100%;
   height: 55px;
-  background-color: black;
+  color: ${(props: any) => {
+    console.log("props st", props)
+    return 'red'
+  }};
+  background-color: ${(props: any) => {
+    console.log("props st1", props)
+    return 'yellow'
+  }};
   padding: 10px 30px;
   display: flex;
   align-items: center;

@@ -5,13 +5,14 @@ import {
 } from '../StyledComponents';
 
 interface HeaderInterface {
-  items: Array<any> 
+  items: Array<any> ,
+  logo?: string
 };
 
 const Header : React.FC<HeaderInterface> = (props) => {
-  return <HeaderContainer>
+  return <HeaderContainer >
     <div className="logo">
-      <div>LOGO</div>
+      <div>{props.logo}</div>
     </div>
     <div className="menu">
       {

@@ -74,16 +74,7 @@ class All extends Component<AllInterface, any> {
             <StepProgress steps={step} current_step={this.state.step} last_step={3} onClickStep={this.onClickStep} finish={true}/>
             <div className="row">
               {/*
-              <div className="col-sm-12">
-                <FormLogin 
-                  heading="Iniciar sesión"
-                  onSend={this.onSendForm}
-                  onChange={this.onChangeEmail} 
-                  email={this.state.email} 
-                  password={this.state.password}
-                  onClickRecovery={() => {this.onModal(true)}}
-                  />
-              </div>
+              
               
               <div className="col-sm-12">
                 <FormRegister 

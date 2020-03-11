@@ -43,11 +43,7 @@ class App extends Component<any, any> {
             <Menu items={items} />
           </LeftSide>
           <Switch>
-              <Route
-                  path="/"
-                  exact={true}
-                  children={<All />}
-              />
+              
               <Route
                   path="/hello"
                   exact={true}
@@ -55,8 +51,13 @@ class App extends Component<any, any> {
               />
               <Route
                   path="/public"
-                  exact={true}
+                  exact={false}
                   children={<Public/>}
+              />
+              <Route
+                  path="/"
+                  exact={true}
+                  children={<All />}
               />
               
               <Route children={<NotFound />}
