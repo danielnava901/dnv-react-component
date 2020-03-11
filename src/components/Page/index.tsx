@@ -3,11 +3,12 @@ import { PageContainer } from '../StyledComponents';
 import PreLoadPage from '../PreLoadPage';
 
 interface PageInterface {
-  loading?: boolean
+  loading?: boolean,
+  color?: string
 };
 
 const Page : React.FC<PageInterface> = (props) => {
-  return <PageContainer>
+  return <PageContainer color={props.color || 'white'}>
     {
       props.loading ? <PreLoadPage /> : props.children 
     }

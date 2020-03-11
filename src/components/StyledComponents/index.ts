@@ -38,9 +38,8 @@ export const PageContainer = styled.div<any>`
     display: flex;
     min-width: 100%;
     min-height: 100%;
-    background-color: rgb(241, 242, 255);
+    background-color: ${(props: any) => props.color || 'rgb(241, 242, 255)' };
 `;
-
 
 export const StepProgressBar = styled.div`
   display: flex;
