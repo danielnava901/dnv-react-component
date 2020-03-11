@@ -242,7 +242,7 @@ export const HeaderContainer = styled.header<any>`
     flex-grow: 2;
 
     .item {
-      margin: 0 0 0 20px;
+      margin: 0 0 0 40px;
 
       a {
         color: ${(props: any) => props.color || 'red'};

@@ -13,7 +13,7 @@ interface HeaderInterface {
 };
 
 const Header : React.FC<HeaderInterface> = (props) => {
-  let isImg: boolean = props.logo ? props.logo.indexOf('.png') >= 0 : false;
+  let isImg: boolean = props.logo ? (props.logo.indexOf('png') >= 0 || props.logo.indexOf('data:image') >= 0) : false;
 
   return <HeaderContainer bgColor={props.bgColor || 'black' } color={props.color || "white" } padding={props.padding || '30px'}>
     <div className="logo">
