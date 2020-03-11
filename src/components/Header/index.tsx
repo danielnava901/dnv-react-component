@@ -10,7 +10,7 @@ interface HeaderInterface {
 };
 
 const Header : React.FC<HeaderInterface> = (props) => {
-  return <HeaderContainer >
+  return <HeaderContainer bgColor="black" color="white">
     <div className="logo">
       <div>{props.logo}</div>
     </div>

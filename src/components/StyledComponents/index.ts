@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {StyledFunction} from 'styled-components';
 
 export const SpanError = styled.div`
   color: red;
@@ -213,17 +213,11 @@ export const TableHistoryContainer = styled.table`
 
 `;
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header<any>`
   width: 100%;
   height: 55px;
-  color: ${(props: any) => {
-    console.log("props st", props)
-    return 'red'
-  }};
-  background-color: ${(props: any) => {
-    console.log("props st1", props)
-    return 'yellow'
-  }};
+  color: ${(props: any) => props.color || 'red'};
+  background-color: ${(props: any) => props.bgColor || 'yellow'};
   padding: 10px 30px;
   display: flex;
   align-items: center;
@@ -240,8 +234,11 @@ export const HeaderContainer = styled.header`
     flex-grow: 2;
 
     .item {
-      color: white;
-      margin: 0 0 0 10px;
+      margin: 0 0 0 20px;
+
+      a {
+        color: ${(props: any) => props.color || 'red'};
+      }
     }
 
     .item:hover {
