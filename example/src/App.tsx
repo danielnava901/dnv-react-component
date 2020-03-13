@@ -31,7 +31,8 @@ class App extends Component<any, any> {
         id: 3,
         caption: "Public",
         available: true,
-        path: "/public"
+        path: "/public",
+        icon: "fas fa-door-open"
       }
     ];
 

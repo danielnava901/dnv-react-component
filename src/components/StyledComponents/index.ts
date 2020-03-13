@@ -160,12 +160,19 @@ export const MenuContainer = styled.div`
 
   .item {
       margin-top: 10px;
-
+      display: flex;
+      align-items: center;
+      
       a {
         list-style: none;
         text-decoration: none;
         color: #4caf50;
         font-weight: 400;
+        
+      }
+
+      i {
+        margin-right: 15px;
       }
 
       a:hover {

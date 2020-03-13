@@ -6,7 +6,8 @@ interface MenuItemsInterface {
   id: number,
   available: boolean,
   caption: string,
-  path: string
+  path: string,
+  icon?: string
 }
 
 interface MenuPropsInterface {
@@ -17,7 +18,10 @@ const Menu: React.FC<MenuPropsInterface> = ({items}) => {
     return <MenuContainer>
         {
             items.filter((item) => !!Number(item.available)).map((item, index) => {
-              return <div className="item" key={index}><Link to={item.path}>{item.caption}</Link></div>
+              return <div className="item" key={index}>
+                  <i className={item.icon} /> 
+                  <Link to={item.path}>{item.caption}</Link>
+                </div>
             })
         }
     </MenuContainer>
