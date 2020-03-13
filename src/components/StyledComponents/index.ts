@@ -245,7 +245,8 @@ export const HeaderContainer = styled.header<any>`
     cursor: pointer;
 
       img {
-        width: 100%;
+        width: 190px;
+        height: 55px;
       }
   }
 
