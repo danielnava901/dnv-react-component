@@ -97,7 +97,8 @@ export const ModalContainer = styled.div`
         background-color: white;
         padding: 10px 25px 25px 25px;
         width: 480px;
-        margin-top: -300px;
+        position: absolute;
+        top: 100px;
 
         .header {
           border-bottom: 1px solid gray;
@@ -119,6 +120,11 @@ export const ModalContainer = styled.div`
 
         .body {
             padding: 10px 0;
+            max-height: 500px;
+            overflow: auto;
+        }
+        .footer {
+          display: flex;
         }
     }
 `;

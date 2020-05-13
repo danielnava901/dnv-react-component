@@ -4,7 +4,8 @@ import { ModalContainer } from '../StyledComponents';
 
 interface ModalInterface {
   title: any,
-  onClose: () => void
+  onClose: () => void,
+  footer?: any
 };
 
 const Modal : React.FC<ModalInterface> = (props) => {
@@ -17,6 +18,12 @@ const Modal : React.FC<ModalInterface> = (props) => {
           <div className="body">
               {props.children}
           </div>
+          {
+            props.footer ? 
+              <div className="footer">
+              {props.footer}
+              </div> : null
+          }
       </div>
     </ModalContainer>
 };

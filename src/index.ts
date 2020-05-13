@@ -4,7 +4,7 @@ import FormRecovery from './components/FormRecoveryPassword';
 import FormRegister from './components/FormRegister';
 import FormResetPassword from './components/FormResetPassword';
 import Loader from './components/Loader';
-import { Main, PageContainer, LeftSideContainer } from './components/StyledComponents';
+import { Main, PageContainer, LeftSideContainer, SpanError } from './components/StyledComponents';
 import StepProgress from './components/StepProgress';
 import Modal from './components/Modal';
 import LeftSide from './components/LeftSide';
@@ -36,6 +36,7 @@ export {
   Utilities,
   PreLoadPage,
   Header,
-  NotFound
+  NotFound, 
+  SpanError
 };
 
