@@ -14,7 +14,6 @@ const TableHistory: React.FC<TableHistoryPropsInterface> = (props: any) => {
       <thead className="">
         <tr>
           {props.columns.map((th: any, index: number) => {
-            console.log('TH', th.key);
             let hide: any = props.hide.find((c: string) => {
               return c === th.key;
             });
@@ -30,9 +29,7 @@ const TableHistory: React.FC<TableHistoryPropsInterface> = (props: any) => {
                     ? () => {
                         th.onClick(th.key);
                       }
-                    : () => {
-                        console.log('click', th.text);
-                      }
+                    : () => {}
                 }
               >
                 {th.text}
