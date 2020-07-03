@@ -5,7 +5,7 @@ import { ModalContainer } from '../StyledComponents';
 interface ModalInterface {
   title: any,
   onClose: () => void,
-  footer?: any
+  footer: any
 };
 
 const Modal : React.FC<ModalInterface> = (props) => {

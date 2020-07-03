@@ -1,6 +1,6 @@
 {
   "name": "dnv-react-component",
-  "version": "0.1.42",
+  "version": "0.1.43",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "repository": {
@@ -53,5 +53,8 @@
     "react-router-dom": "^5.1.2",
     "styled-components": "^5.0.1",
     "yup": "^0.28.1"
+  },
+  "notes": {
+    "n1": "npm run build -> "
   }
 }

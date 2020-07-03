@@ -56,7 +56,7 @@ const FormResetPassword : React.FC<FormResetPasswordInterface> = (props) => {
                   />            
             </div>
             <div className="form-group">
-              <label htmlFor="password">Contraseña</label>
+              <label htmlFor="password">Nueva contraseña</label>
               <input 
                   type="password" 
                   id="password" 
@@ -67,7 +67,7 @@ const FormResetPassword : React.FC<FormResetPasswordInterface> = (props) => {
               {formik.errors.password ? <SpanError>{formik.errors.password}</SpanError> : null}
             </div>
             <div className="form-group">
-              <label htmlFor="confirmPassword">Confirma contraseña</label>
+              <label htmlFor="confirmPassword">Confirmar contraseña</label>
               <input 
                   type="password" 
                   id="confirmPassword" 
