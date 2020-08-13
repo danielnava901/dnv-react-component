@@ -1,6 +1,5 @@
 import React from 'react';
 import { TableHistoryContainer } from '../StyledComponents';
-
 interface TableHistoryPropsInterface {
   columns: any;
   data: any;
@@ -18,7 +17,6 @@ const TableHistory: React.FC<TableHistoryPropsInterface> = (props: any) => {
               return c === th.key;
             });
             hide = !!hide ? 'column-invisible' : '';
-
             return (
               <th
                 key={index}
@@ -32,7 +30,7 @@ const TableHistory: React.FC<TableHistoryPropsInterface> = (props: any) => {
                     : () => {}
                 }
               >
-                {th.text}
+                <span>{th.text}</span>
               </th>
             );
           })}
